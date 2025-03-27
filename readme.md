@@ -38,58 +38,59 @@ This project is a simple calculator microservice built using Node.js and Express
 - **Query Parameters**: `num1` and `num2` (both required).
 - **Response**: Returns the sum of the two numbers.
 - **Example**:
-```bash
+  
+```
   curl "http://localhost:3000/add?num1=5&num2=3"
-  ```
+```
   **Response**:
-  ```json
+```
   {
      "result": 8
   }
-  ```
+```
 ### GET /subtract
 - **Description**: Subtracts the second number from the first.
 - **Query Parameters**: `num1` and `num2` (both required).
 - **Response**: Returns the result of the subtraction.
 - **Example**:
-  ```bash
+```bash
   curl "http://localhost:3000/subtract?num1=10&num2=4"
-  ```
+```
   **Response**:
 
-  ```json
+```json
   {
      "result": 6
   }
-  ```
+```
 ### GET /multiply
 - **Description**: Multiplies two numbers.
 - **Query Parameters**: `num1` and `num2` (both required).
 - **Response**: Returns the product of the two numbers.
 - **Example**:
-  ```bash
+```bash
   curl "http://localhost:3000/multiply?num1=7&num2=6"
-  ```
+```
   **Response**:
-  ```json
+```json
   {
      "result": 42
   }
-  ```
+```
 ### GET /divide
 - **Description**: Divides the first number by the second.
 - **Query Parameters**: `num1` and `num2` (both required).
 - **Response**: Returns the result of the division or an error if division by zero is attempted.
 - **Example**:
-  ```bash
+```bash
   curl "http://localhost:3000/divide?num1=20&num2=4"
-  ```
+ ```
   **Response**:
-  ```json
+```json
   {
      "result": 5
   }
-  ```
+```
 ## Logging
 This project uses the Winston library for logging. Logs include details about each request, such as the IP address, request method, URL, headers, and response status. Logs are stored in the `logs` directory with separate files for errors and combined logs.
 ### Example Log Configuration
@@ -112,21 +113,21 @@ const logger = winston.createLogger({
 ### Example Log Output
 
 - **Info Log**:
-  ```
+```
   info: Addition requested: 5 + 3 = 8
-  ```
+```
 - **Error Log**:
-  ```
+```
   error: Invalid input for division
-  ```
+```
 - **Division by Zero Log**:
-  ```
+```
   error: Division by zero attempt
-  ```
+```
 ## Running the Application
 1. Start the server:
-    ```bash
+```bash
     node index.js
-    ```
+```
 2. Access the endpoints using a browser, Postman, or `curl`.
 3. Monitor logs in the `logs` directory for debugging and analysis.
