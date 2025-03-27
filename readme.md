@@ -10,24 +10,24 @@ A Node.js-based project designed to demonstrate practical implementation of serv
 This project is a simple calculator microservice built using Node.js and Express. It provides basic arithmetic operations (addition, subtraction, multiplication, division) through RESTful API endpoints. The microservice also includes error handling and logging for better development and debugging.
 ## Steps to Build the Project
 1. **Set Up the Environment**:
-    - Install Node.js from the [official website](https://nodejs.org/en/download/).
-    - Install Git and clone the repository using `git clone <repository-url>`.
-2. **Install Dependencies**:
-    - Navigate to the project directory.
-    - Run `npm install` to install the required dependencies, including `express` and `winston`.
-3. **Create the Server**:
-    - Use Express to set up a server listening on port 3000.
-    - Define routes for arithmetic operations (`/add`, `/subtract`, `/multiply`, `/divide`).
-4. **Implement Logging**:
-    - Use the Winston library for logging.
-    - Configure Winston to log errors and combined logs into separate files in the `logs` directory.
-5. **Add Error Handling**:
-    - Validate input parameters for each endpoint.
-    - Handle division by zero and other invalid inputs gracefully.
-    - Implement a global error handler to catch unexpected errors.
-  6. **Run the Application**:
-    - Start the server using `node index.js`.
-    - Access the endpoints via `http://localhost:3000`.
+     - Install Node.js from the [official website](https://nodejs.org/en/download/).
+     - Install Git and clone the repository using `git clone <repository-url>`.
+3. **Install Dependencies**:
+     - Navigate to the project directory.
+     - Run `npm install` to install the required dependencies, including `express` and `winston`.
+5. **Create the Server**:
+     - Use Express to set up a server listening on port 3000.
+     - Define routes for arithmetic operations (`/add`, `/subtract`, `/multiply`, `/divide`).
+6. **Implement Logging**:
+     - Use the Winston library for logging.
+     - Configure Winston to log errors and combined logs into separate files in the `logs` directory.
+7. **Add Error Handling**:
+     - Validate input parameters for each endpoint.
+     - Handle division by zero and other invalid inputs gracefully.
+     - Implement a global error handler to catch unexpected errors.
+  8. **Run the Application**:
+     - Start the server using `node index.js`.
+     - Access the endpoints via `http://localhost:3000`.
 ## Features
 - Four API endpoints for arithmetic operations: addition, subtraction, multiplication, and division.
 - Error handling to validate input parameters and provide meaningful error messages.
